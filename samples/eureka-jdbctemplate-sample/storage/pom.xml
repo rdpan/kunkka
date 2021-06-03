@@ -62,7 +62,7 @@
 
         <dependency>
             <groupId>com.hhl</groupId>
-            <artifactId>integration</artifactId>
+            <artifactId>client-starter</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

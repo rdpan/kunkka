@@ -1,7 +1,7 @@
 package com.hhl.kunkka.integration.feign;
 
-import com.hhl.kunkka.common.constants.ClientConstant;
 import com.hhl.kunkka.core.context.RootContext;
+import com.hhl.kunkka.common.constants.ClientConstant;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;

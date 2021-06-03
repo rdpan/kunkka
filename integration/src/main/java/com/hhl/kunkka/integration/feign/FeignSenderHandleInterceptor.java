@@ -1,6 +1,7 @@
 package com.hhl.kunkka.integration.feign;
 
 import com.hhl.kunkka.common.constants.ClientConstant;
+import com.hhl.kunkka.core.context.RootContext;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.slf4j.Logger;
@@ -12,8 +13,8 @@ public class FeignSenderHandleInterceptor implements RequestInterceptor {
 
     @Override
     public void apply(RequestTemplate requestTemplate) {
-        String xid = System.currentTimeMillis() + "";
-        logger.debug("feign传递xid=" + xid);
-        requestTemplate.header(ClientConstant.KEY_XID, xid);
+        if (RootContext.getXID() != null) {
+            requestTemplate.header(ClientConstant.KEY_XID, RootContext.getXID());
+        }
     }
 }

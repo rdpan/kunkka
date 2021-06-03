@@ -5,7 +5,7 @@
     <parent>
         <artifactId>samples</artifactId>
         <groupId>com.hhl</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -18,6 +18,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <kunkka.version>1.0-SNAPSHOT</kunkka.version>
     </properties>
 
 </project>

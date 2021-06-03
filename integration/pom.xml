@@ -5,7 +5,7 @@
     <parent>
         <artifactId>kunkka</artifactId>
         <groupId>com.hhl</groupId>
-        <version>${kunkka.version}</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>com.hhl</groupId>
             <artifactId>core</artifactId>
-            <version>${kunkka.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>

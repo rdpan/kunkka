@@ -1,5 +1,6 @@
 package com.hhl.sample.storage.controller;
 
+import com.hhl.kunkka.core.context.RootContext;
 import com.hhl.sample.storage.dao.StorageDAO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +16,7 @@ public class StorageController {
 
     @RequestMapping(value = "/storage/deduct", produces = "application/json")
     public String deduct(String commodityCode, Integer count) {
-        System.out.println("扣减库存");
-        log.info("----------");
-        log.debug("++++++++++");
+        log.info("扣减库存:"+ RootContext.getXID());
         storageDAO.deduct(commodityCode, count);
         return "success";
     }

@@ -5,7 +5,7 @@
     <!-- 日志存放路径 -->
     <property name="log.path" value="./logs" />
     <!-- 日志输出格式 -->
-    <property name="log.pattern" value="%d{yyy-MM-dd HH:mm:ss.SSS} [%X{X-B3-TraceId:-},%X{X-B3-SpanId:-}] [%thread] %-5level %logger{20} - [%method,%line] - %msg%n" />
+    <property name="log.pattern" value="%d{yyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{20}-[%method,%line]:%msg%n" />
 
     <!-- 控制台输出 -->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">

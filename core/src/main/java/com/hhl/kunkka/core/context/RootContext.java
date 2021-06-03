@@ -28,4 +28,12 @@ public class RootContext {
             threadLocal.get().remove(ClientConstant.KEY_XID);
         }
     }
+
+    public static String getXID() {
+        Object xid = threadLocal.get().get(ClientConstant.KEY_XID);
+        if (xid == null) {
+            return null;
+        }
+        return xid.toString();
+    }
 }
