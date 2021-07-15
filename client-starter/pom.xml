@@ -27,6 +27,11 @@
             <artifactId>integration</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>com.hhl</groupId>
+            <artifactId>at</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 
     <properties>
